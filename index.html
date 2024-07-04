@@ -3,37 +3,51 @@
 <head>
     <title>My portfolio</title>
     <link href="resources/style.css" rel="stylesheet">
+    <meta charset="UTF-8">
 </head>
 <body>
     <header>
-        <h1>Clémence Ray Di Scala</h1>
+        <h1>Clemence Ray Di Scala</h1>
         <nav>
             <ul>
-                <li>About me</li>
-                <li>My projects</li>
-                <li>My skills</li>
+                <li><a href="#about">About me</a></li>
+                <li><a href=".projects">My projects</a></li>
+                <li><a href="#logo">My skills</a></li>
                 <li>Contact</li>
             </ul>
         </nav>
     </header>
-    <div class="section">
+    <div class="about">
+        <h2>About me</h2>
+        <p>I am Clemence Ray Di Scala, a 37 year old French aspiring developer living in Hamburg, Germany. I am currently training to become a full-stack engineer with Codecademy.</p>
+        <p>Before that I have followed many paths in my professionnal life, from international lawyer to speciality coffee barista and lastly I created my own company as a tour guide in Hamburg.</p>
+        <p> I love to learn new things, solve problems on my own and that's why my next step is becoming a professional developer !</p>
+    </div>
+    <div class="projects">
         <h2>My projects</h2>
             <div id="poulettes">
-                <h3>les poulettes parfaites</h3>
-                <img alt="the front page of 'les poulettes parfaites'">
-                <p>"les poulettes parfaites" is a professional website for a company created by two dogs and her human who provide wellness services to people in need. It's a one page website presenting their services using HTML and CSS, especially the CSS grid. </p>
+                <h3 id="poulettestitle">les poulettes parfaites</h3>
+                <div id="poulettescontent">
+                    <img src="resources/images/poulettes parfaites.png" alt="the front page of 'les poulettes parfaites'"/>
+                    <p><b>"les poulettes parfaites"</b> is a professional website for a company created by two dogs and their human who provide wellness services to people in need. It's a one page website presenting their services using HTML and CSS, especially the CSS grid. </p>
+                </div>
             </div>
             <div id="pizza">
-                <h3>the pizza lovers club</h3>
-                <img alt="the front page of 'the pizza lovers club'">
-                <p>"the pizza lovers club" was created for a local club passionated about pizza. The website presents their activities and allow other local pizza lovers to contact and join them. The website was built using HTML and CSS, and focused on the responsive aspect of the website.</p>
+                <h3 id="pizzatitle">the pizza lovers club</h3>
+                <div id="pizzacontent">
+                    <img src="resources/images/pizza lovers club.png" alt="the front page of 'the pizza lovers club'"/>
+                    <p><b>"the pizza lovers club"</b> was created for a local club passionated about pizza. The website presents their activities and allow other local pizza lovers to contact and join them. The website was built using HTML and CSS, and focused on the responsive aspect of the website.</p>
+                </div>
             </div>
     </div>
-    <div class="section">
+    <div class="skills">
         <h2>My skills</h2>
-            <img id="HTML">
-            <img id="CSS">
-            <img id="JS">
+            <div id="logo">
+                <img src="resources/images/html.png" id="HTML"/>
+                <img src="resources/images/css-3.png" id="CSS"/>
+                <img src="resources/images/java-script.png" id="JS"/>
+            </div>
     </div>
+    <script  src="resources/script.js"></script>
 </body>
 </html>
